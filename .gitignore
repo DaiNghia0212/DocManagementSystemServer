@@ -6,3 +6,13 @@ tmp/
 temp/
 
 .env
+*service-account.json
+cloud-sql-proxy*
+
+src/routes.ts
+src/swagger.json
+src/migrations
+
+uploads
+
+package-lock.json

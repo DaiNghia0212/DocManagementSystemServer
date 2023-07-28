@@ -1,0 +1,25 @@
+{
+  "entryFile": "src/index.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["./**/*.controller.ts"],
+  "spec": {
+    "outputDirectory": "./src",
+    "specVersion": 3,
+    "version": "1.0.1",
+    "name": "Document Management System",
+    "description": "Document Management System API",
+    "server": [ "http", "https" ],
+    "securityDefinitions": {
+      "api_key": {
+        "type": "apiKey",
+        "name": "Authentication",
+        "in": "header"
+      }
+    }
+  },
+  "routes": {
+    "routesDir": "./src",
+    "authenticationModule": "./src/lib/authentication.ts",
+    "iocModule": "src/lib/ioc.container.ts"
+  }
+}
